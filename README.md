@@ -1,4 +1,5 @@
-<img width="1920" height="1080" alt="Screenshot From 2026-03-05 14-13-36" src="https://github.com/user-attachments/assets/f9df06ff-1127-45aa-9155-e1673e4e267c" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5e1167d6-51fe-4f2f-84a6-98b72e9c05e9" />
+
 
 # Tower of Hanoi, by grok-code-fast 
 
