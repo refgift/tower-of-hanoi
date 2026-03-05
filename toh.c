@@ -92,7 +92,7 @@ int main() {
     
     init_pegs();
     
-    clock_t start_time = clock();
+    time_t start_time = time(NULL);
     
     initscr();
     noecho();
@@ -113,8 +113,8 @@ int main() {
     
     hanoi(num_disks, 0, 2, 1);
     
-    clock_t end_time = clock();
-    double time_taken = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+    time_t end_time = time(NULL);
+    double time_taken = difftime(end_time, start_time);
     
     int msg_y = LINES / 2 - (MAX_HEIGHT + 3) / 2;
     mvprintw(msg_y, COLS / 2 - 15, "Solved! Press any key to exit");
