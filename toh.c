@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <curses.h>
 #include <unistd.h>
 #include <time.h>
@@ -117,8 +118,13 @@ int main() {
     double time_taken = difftime(end_time, start_time);
     
     int msg_y = LINES / 2 - (MAX_HEIGHT + 3) / 2;
-    mvprintw(msg_y, COLS / 2 - 15, "Solved! Press any key to exit");
-    mvprintw(msg_y + 1, COLS / 2 - 20, "Time taken: %.2f seconds", time_taken);
+    const char* solved_msg = "Solved! Press any key to exit";
+    int solved_len = strlen(solved_msg);
+    mvprintw(msg_y, COLS / 2 - solved_len / 2, "%s", solved_msg);
+    char time_msg[50];
+    sprintf(time_msg, "Time taken: %.2f seconds", time_taken);
+    int time_len = strlen(time_msg);
+    mvprintw(msg_y + 1, COLS / 2 - time_len / 2, "%s", time_msg);
     refresh();
     getch();
     endwin();
