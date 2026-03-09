@@ -9,3 +9,5 @@ I use it as a test because it was a benchmark
 for the FORTH language many many years ago.
 
 It runs in the terminal.
+
+This is program that decided me for staying with grok for my software development.
