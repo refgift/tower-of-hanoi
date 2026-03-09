@@ -10,6 +10,6 @@ for the FORTH language many many years ago.
 
 It runs in the terminal.
 
-This is the program that decided me for staying with grok for my software development. It showed me
+This is the program that decided me for staying with grok and opencode for my software development. It showed me
 the potential of grok-code-fast-1. I used the opencode cli to get it to work. Grok told he programs
 in his mind and has no sandbox for C programs, only python.
