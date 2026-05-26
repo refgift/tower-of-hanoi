@@ -73,13 +73,13 @@ void hanoi(int n, int from, int to, int aux) {
     if (n == 1) {
         move_disk(from, to);
         draw();
-        { struct timespec ts = {0, 500000000}; nanosleep(&ts, NULL); }
+//        { struct timespec ts = {0, 500000000}; nanosleep(&ts, NULL); }
         return;
     }
     hanoi(n-1, from, aux, to);
     move_disk(from, to);
     draw();
-    { struct timespec ts = {0, 500000000}; nanosleep(&ts, NULL); }
+//    { struct timespec ts = {0, 500000000}; nanosleep(&ts, NULL); }
     hanoi(n-1, aux, to, from);
 }
 
@@ -110,7 +110,7 @@ int main() {
     }
     
     draw();
-    { struct timespec ts = {1, 0}; nanosleep(&ts, NULL); } // show initial
+//    { struct timespec ts = {1, 0}; nanosleep(&ts, NULL); } // show initial
     
     hanoi(num_disks, 0, 2, 1);
     
