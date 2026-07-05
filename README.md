@@ -1,6 +1,8 @@
 # grok code fast 1
 <img src=tohrun.png />
+
 # grok build 0.1
+
 <img src=tohwithgrokbuild.png />
 
 # Tower of Hanoi - C with Curses TUI
