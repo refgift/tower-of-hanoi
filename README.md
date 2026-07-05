@@ -1,4 +1,7 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5e1167d6-51fe-4f2f-84a6-98b72e9c05e9" />
+# grok code fast 1
+<img src=tohrun.png />
+# grok build 0.1
+<img src=tohwithgrokbuild.png />
 
 # Tower of Hanoi - C with Curses TUI
 
